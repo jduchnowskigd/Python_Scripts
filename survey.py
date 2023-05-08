@@ -36,11 +36,17 @@ for arg in sys.argv[1:]:
             for email in email_file:
                 email_list.append(email)
 
+
+with open('config.json') as f:
+    json_data = json.load(f)
+
+bearer_token = json_data['Bearer']
+
 client = requests.Session()
 client.headers.update({
     'Content-Type': "application/json",
     'Accept': "application/json",
-    'Authorization': "Bearer wMR03sI9PWsqUCuZNTcisHsiws8UUMWT0pxj0-SlxPXEWQ-ZB-tgBqLyqX-eI3YKiYRHWVdWm3XlIRTsznXZ--hBGOBpv9UIaWhfBuQzl.aBEbWGaJ63XK-vRRqWHMws"
+    'Authorization': f"Bearer {bearer_token}"
 })
 
 
