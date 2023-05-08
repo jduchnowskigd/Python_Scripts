@@ -1,0 +1,91 @@
+{
+  "title": "Example Survey",
+  "pages": [
+      {
+          "title": "Page 1",
+          "questions": [
+              {
+                "headings": [
+                  {
+                      "heading": "Choose your favorite drinks"
+                  }
+              ],
+                  "family": "multiple_choice",
+                  "subtype": "vertical",
+                  "answers": {
+                    "choices":[
+                        {
+                            "text": "Coffee"
+                        },
+                        {
+                            "text": "Tea"
+                        },
+                        {   
+                            "text": "Orange Juice"
+                        },
+                        {
+                            "text": "Cola"
+                        }
+                    ]
+                }
+              },
+              {
+                "headings": [
+                  {
+                      "heading": "Choose your favorite drinks"
+                  }
+              ],
+                  "family": "multiple_choice",
+                  "subtype": "vertical",
+                  "answers": {
+                    "choices":[
+                        {
+                            "text": "Coffee"
+                        },
+                        {
+                            "text": "Tea"
+                        },
+                        {   
+                            "text": "Orange Juice"
+                        },
+                        {
+                            "text": "Cola"
+                        }
+                    ]
+                }
+              }
+          ]
+      },
+      {
+          "title": "Page 2",
+          "questions": [
+            {
+              "headings": [
+                {
+                    "heading": "Choose your favorite drinks"
+                }
+            ],
+                "family": "multiple_choice",
+                "subtype": "vertical",
+                "answers": {
+                  "choices":[
+                      {
+                          "text": "Coffee"
+                      },
+                      {
+                          "text": "Tea"
+                      },
+                      {   
+                          "text": "Orange Juice"
+                      },
+                      {
+                          "text": "Cola"
+                      }
+                  ]
+              }
+            }
+          ]
+      }
+  ],
+  "language": "en"
+}
