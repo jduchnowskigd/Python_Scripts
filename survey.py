@@ -13,14 +13,9 @@ import smtplib
 import ssl
 import requests
 
-
-
-
-
 # SINCE SENDING EMAIL INVITATIONS IS A PAID FEATURE IN SURVEYMONKEY
 # I DECIDED TO USE AN SMTP SERVER INSTEAD
 # AND SEND THE EMAILS FROM THROAWAY GMAIL ACCOUNT
-
 
 # ACCESS JSON SURVEY TEMPLATE AND LIST OF EMAILS PROVIDED AS ARGUMENTS
 NEW_SURVEY = ""
@@ -37,7 +32,7 @@ for arg in sys.argv[1:]:
                 email_list.append(email)
 
 
-with open('config.json') as f:
+with open('config.json', encoding='utf-8') as f:
     json_data = json.load(f)
 
 bearer_token = json_data['Bearer']

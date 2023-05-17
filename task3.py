@@ -8,7 +8,7 @@ in the access log
 
 # Open the access.log file for reading
 with open('access.log.5', 'r', encoding='utf-8') as file:
-    USER_DICT = dict()
+    USER_DICT = {}
     # Loop over each line in the file
     for line in file:
 

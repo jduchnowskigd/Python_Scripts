@@ -6,15 +6,13 @@ This script provides information about the machine on which it is currently runn
 import argparse
 import socket
 import os
+import platform
 import psutil
+
 
 def get_distro_info():
     """Get information about the currently used distribution"""
-    with open('/etc/os-release', encoding='utf-8') as file:
-        for line in file:
-            if line.startswith('PRETTY_NAME'):
-                return line.split('=')[1].strip().strip('"')
-            return None
+    return platform.platform()
 
 def get_memory_info():
     """Get information about memory"""
